@@ -1,0 +1,76 @@
+name: Postgres.app
+description: "Postgres.app is a full featured PostgreSQL installation packaged as a standard Mac app."
+
+gems: ['jekyll-github-metadata']
+repository: postgresapp/postgresapp
+
+downloadLocation: "https://github.com/PostgresApp/PostgresApp/releases/download/v2.1.4/Postgres-2.1.4.dmg"
+releaseNotesLocation: "https://github.com/PostgresApp/PostgresApp/releases/v2.1.4"
+postgresappVersion: "2.1.4"
+postgresappMinSystemVersion: "10.10"
+postgresqlVersions: [
+	{ postgres: "10.4", postgis: "2.4.4" },
+	{ postgres: "9.6.9", postgis: "2.3.7" },
+	{ postgres: "9.5.13", postgis: "2.2.7" },
+]
+
+legacyMinSystemVersion: "10.7"
+legacyVersions: [
+	{
+		downloadLocation: "https://github.com/PostgresApp/PostgresApp/releases/download/v2.1.4/Postgres-Legacy-9.3.23.zip",
+		releaseNotes: "https://github.com/PostgresApp/PostgresApp/releases/v2.1.4",
+		postgresqlVersion: "9.3.23",
+		postgisVersion: "2.1.9",
+	},
+	{
+		downloadLocation: "https://github.com/PostgresApp/PostgresApp/releases/download/v2.1.4/Postgres-Legacy-9.4.18.zip",
+		releaseNotes: "https://github.com/PostgresApp/PostgresApp/releases/v2.1.4",
+		postgresqlVersion: "9.4.18",
+		postgisVersion: "2.1.9",
+	},
+	{
+		downloadLocation: "https://github.com/PostgresApp/PostgresApp/releases/download/v2.1.4/Postgres-Legacy-9.5.13.zip",
+		releaseNotes: "https://github.com/PostgresApp/PostgresApp/releases/v2.1.4",
+		postgresqlVersion: "9.5.13",
+		postgisVersion: "2.2.7",
+	},
+	{
+		downloadLocation: "https://github.com/PostgresApp/PostgresApp/releases/download/v2.1.4/Postgres-Legacy-9.6.9.zip",
+		releaseNotes: "https://github.com/PostgresApp/PostgresApp/releases/v2.1.4",
+		postgresqlVersion: "9.6.9",
+		postgisVersion: "2.3.7",
+	},
+	{
+		downloadLocation: "https://github.com/PostgresApp/PostgresApp/releases/download/v2.1.4/Postgres-Legacy-10.4.zip",
+		releaseNotes: "https://github.com/PostgresApp/PostgresApp/releases/v2.1.4",
+		postgresqlVersion: "10.4",
+		postgisVersion: "2.4.4",
+	},
+]
+
+languages: [en, de]
+
+strings: {
+	de: {
+		subtitle: Der schnellste Weg zu PostgreSQL am Mac,
+		download-button: Download,
+		docs-button: Dokumentation,
+		github-button: Github,
+		stars: Sterne,
+		follow: Folge,
+		find-us: Finde uns auf,
+		typo: "Feler gefunden?",
+		edit-page: Bearbeite diese Seite,
+	},
+	en: {
+		subtitle: The easiest way to get started with PostgreSQL on the Mac,
+		download-button: Download,
+		docs-button: Documentation,
+		github-button: Github,
+		stars: Stars,
+		follow: Follow,
+		find-us: Find us on,
+		typo: "Spotted a typo?",
+		edit-page: edit this page,
+	}
+}
